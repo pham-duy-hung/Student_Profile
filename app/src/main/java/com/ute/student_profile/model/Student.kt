@@ -7,9 +7,9 @@ data class Student (
     val name: String,
     val className: String,
     val email: String,
-    val GPA: Double
+    val gpa: Double
     ): Serializable
     {
     val isHonorStudent: Boolean
-        get() = GPA>=3.6
+        get() = gpa>=3.6
 }
