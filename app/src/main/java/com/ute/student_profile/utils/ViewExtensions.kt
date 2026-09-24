@@ -15,7 +15,6 @@ fun Context.toast(message: String, duration: Int = Toast.LENGTH_SHORT) {
     Toast.makeText(this, message, duration).show()
 }
 
-//Extension cho EditText lấy chuỗi đã trim
 fun EditText.trimmedText(): String = text.toString().trim()
 
 //Extension nghiệp vụ quy đổi điểm sang Xếp loại
@@ -27,6 +26,7 @@ fun Double.toAcademicRanking(): String = when {
     this >= 1.0 -> "Yếu"
     else -> "Kém"
 }
+
 
 // Extension đổi màu Badge theo điểm
 fun Double.toRankingColor(): Int = when {
